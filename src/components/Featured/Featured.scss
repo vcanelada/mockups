@@ -1,0 +1,12 @@
+.featured {
+  @apply py-20 bg-[var(--color-background-alt)];
+  &__wrapper {
+    @apply grid grid-cols-3 gap-y-16;
+  }
+  &__title {
+    @apply col-span-3 text-xl font-bold mb-2;
+  }
+  img {
+    @apply rounded-md max-h-96 m-auto mb-4;
+  }
+}

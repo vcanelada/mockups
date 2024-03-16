@@ -1,0 +1,7 @@
+.pagination {
+  @apply flex items-center justify-center gap-4 pt-20;
+  &__item {
+    @apply p-2 border border-[var(--color-secondary)] text-[var(--color-secondary)] aspect-square w-10 flex items-center justify-center cursor-pointer rounded-md;
+    @apply first:bg-[var(--color-secondary)] first:text-white;
+  }
+}

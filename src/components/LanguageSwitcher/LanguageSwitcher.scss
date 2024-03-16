@@ -1,0 +1,6 @@
+.language-switcher {
+  @apply flex items-center gap-2;
+  &__label {
+    @apply flex items-center gap-1 text-sm;
+  }
+}

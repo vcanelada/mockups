@@ -1,0 +1,42 @@
+body {
+  @apply bg-[var(--color-background-alt)];
+}
+
+.email {
+  @apply my-8;
+  &__wrapper {
+    @apply bg-[var(--color-background)] text-[var(--color-text)] font-[var(--font-primary)] text-base py-8 max-w-2xl px-8;
+  }
+  &__colophon {
+    @apply max-w-2xl m-auto text-sm mt-8 opacity-75;
+  }
+  &__header {
+    @apply mb-8;
+  }
+  h2 {
+    @apply text-2xl font-bold mb-4 mt-8;
+  }
+  p {
+    @apply mb-2;
+  }
+  ul {
+    @apply list-disc list-inside mb-4;
+  }
+  &__signature {
+    @apply flex items-center gap-4 mt-8;
+    &-image {
+      img {
+        @apply rounded-full;
+      }
+    }
+    strong {
+      @apply font-bold block;
+    }
+  }
+  &__cta {
+    @apply mt-8;
+  }
+  &__footer {
+    @apply mt-8;
+  }
+}

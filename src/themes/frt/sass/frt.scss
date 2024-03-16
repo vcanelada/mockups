@@ -1,0 +1,34 @@
+// GLOBAL
+// #region Global
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&display=swap');
+
+:root {
+  --color-primary: #003576;
+  --color-secondary: #C9944C;
+  --color-text: #003576;
+  --color-accent: #61CE70;
+  --color-background: #fff;
+  --color-background-alt: #C9944C11;
+  --font-primary: "Jost", sans-serif;
+  --font-secondary: "Jost", sans-serif;
+}
+
+body {
+  @apply bg-[url("/src/themes/frt/images/bg.png")] bg-no-repeat;
+}
+// #endregion')
+
+// COMPONENTS
+.site-footer {
+  @apply bg-[var(--color-primary)] text-[var(--color-background)];
+}
+
+form {
+  input:not([type="checkbox"]):not([type="radio"]) {
+    @apply border border-[var(--color-secondary)] px-4 py-2;
+  }
+  button, [type='button'], [type='reset'], [type='submit'] {
+    @apply bg-[var(--color-secondary)] text-[var(--color-background)] flex items-center justify-center text-sm font-bold tracking-widest uppercase px-4 py-2 rounded-full;
+  }
+}

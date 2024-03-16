@@ -1,0 +1,24 @@
+.header {
+  @apply bg-[var(--color-background-alt)] py-4;
+  &__wrapper {
+    @apply flex justify-between gap-8 items-center;
+  }
+  &__logo {
+    @apply flex items-center gap-4 cursor-pointer;
+  }
+  &__toggle {
+    @apply text-[var(--color-primary)] flex items-center text-xl;
+    @apply md:hidden;
+  }
+  &__column {
+    @apply fixed right-0 top-0 bottom-0 flex-col gap-4 items-center justify-between w-0 overflow-hidden hidden;
+    @apply md:flex md:relative md:w-auto md:flex-row;
+    &--open {
+      @apply w-full h-full visible flex;
+    }
+  }
+
+  .secondary-toggle {
+    @apply flex items-center gap-2;
+  }
+}

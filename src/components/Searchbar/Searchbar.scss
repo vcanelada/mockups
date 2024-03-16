@@ -1,0 +1,9 @@
+.searchbar {
+  @apply gap-0 relative;
+  input {
+    @apply border border-[var(--color-secondary)] rounded-md px-4 py-2 w-full;
+  }
+  button {
+    @apply absolute bg-transparent text-lg right-0 top-0 bottom-0 flex items-center justify-center text-[var(--color-secondary)] rounded-md px-4 py-2;
+  }
+}

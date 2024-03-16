@@ -1,0 +1,39 @@
+.landing-hero {
+  @apply py-20;
+  &__wrapper {
+    @apply grid grid-cols-2 gap-16;
+  }
+  &__ebook {
+    @apply mb-16;
+    img {
+      @apply rounded-md shadow-2xl max-h-96 m-auto;
+    }
+  }
+  &__form-pretitle {
+    @apply bg-[var(--color-text)] text-white inline-block py-1 px-2 rounded-sm uppercase font-bold text-xs mb-2;
+  }
+  &__form-title {
+    @apply text-6xl font-bold mb-4;
+  }
+  &__form-subtitle {
+    @apply text-xl mb-16;
+  }
+  h2 {
+    @apply text-4xl font-bold mb-4;
+  }
+  h3 {
+    @apply text-2xl font-bold mb-4;
+  }
+  p {
+    @apply leading-6 mb-4;
+  }
+  ul {
+    li {
+      @apply pl-8 mb-2 relative;
+      &:before {
+        @apply absolute left-0 block text-[var(--color-secondary)];
+        content: '→';
+      }
+    }
+  }
+}

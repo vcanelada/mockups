@@ -1,0 +1,15 @@
+.hero {
+  @apply py-20;
+  &__wrapper {
+    @apply max-w-2xl text-center;
+  }
+  h1 {
+    @apply text-7xl font-bold mb-4;
+  }
+  p {
+    @apply opacity-80 text-xl;
+  }
+  button {
+    @apply mt-8;
+  }
+}

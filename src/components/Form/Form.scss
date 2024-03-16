@@ -1,0 +1,24 @@
+.form {
+  @apply flex flex-col gap-4;
+  &--subscription {
+    @apply grid grid-cols-[1fr_min-content] gap-2 items-end;
+    button, [type='button'], [type='reset'], [type='submit'] {
+      @apply col-start-2 row-start-1;
+    }
+  }
+  fieldset {
+    @apply flex flex-col gap-1;
+  }
+  input:not([type="checkbox"]):not([type="radio"]) {
+    @apply border-none py-3 rounded-md;
+  }
+  label {
+    @apply text-sm font-bold;
+    &:has(input[type="checkbox"]) {
+      @apply font-normal flex gap-1;
+    }
+  }
+  button, [type='button'], [type='reset'], [type='submit'] {
+    @apply col-start-2 whitespace-nowrap bg-[var(--color-primary)] text-white p-4 rounded-md cursor-pointer;
+  }
+}

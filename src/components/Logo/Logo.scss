@@ -1,0 +1,10 @@
+.logo {
+  @apply flex items-center gap-2;
+  &__image{
+    @apply max-w-[200px];
+  }
+  &__alt {
+    @apply relative text-xs font-bold uppercase bg-[var(--color-secondary)] text-white px-2 py-1 rounded tracking-wider;
+    transform: (-8deg) translate(-10px, -6px);
+  }
+}

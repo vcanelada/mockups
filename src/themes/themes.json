@@ -1,0 +1,85 @@
+{
+  "themes": {
+
+    "frt" : {
+      "version": "1.0.0",
+      "themePath": "/src/themes/frt",
+      "styleSheet": "/sass/frt.scss",
+      "logo": "/images/logo.webp",
+      "footer": "<p>UC-12 Puerto Cancún, Av. Bonampak, Zona Hotelera,</p><p>Benito Juarez, Cancún, Quintana Roo, 77500</p><p>info@fertilymed.com</p><p>998 204 5279</p>",
+      "menu": {
+        "header": ["Fertility", "Andrology", "Embryology", "Genetics"],
+        "footer": ["Privacy Policy", "Terms & Conditions"]
+      },
+      "languages": ["English", "Spanish"],
+      "colophon": "© 2021 FertilyMed. All rights reserved.",
+      "landing": {
+        "ebook": "/images/ebook.png",
+        "preTitle": "Free Ebook",
+        "title": "Descarga el Ebook sobre la temática de esta landing",
+        "subtitle": "Rellena el siguiente formulario para descargar el Ebook:"
+      },
+      "thankyou": {
+        "title": "¡Formulario enviado con éxito!",
+        "subtitle": "Te hemos enviado la información por Email, pero también puedes descargarla haciendo click aquí."
+      }
+    },
+
+    "ces" : {
+      "version": "1.0.0",
+      "themePath": "/src/themes/ces",
+      "styleSheet": "/sass/ces.scss",
+      "landing": {
+        "ebook": "/images/600x400.png",
+        "preTitle": "Oporunidad",
+        "title": "Programa generción digital para directivos",
+        "subtitle": "Rellena el siguiente formulario para tener más información:"
+      },
+      "thankyou": {
+        "title": "¡Formulario enviado con éxito!",
+        "text": "Te hemos enviado la información por Email, pero también puedes descargarla haciendo click aquí."
+      }
+    },
+    
+    "occ" : {
+      "version": "1.0.0",
+      "themePath": "/src/themes/occ",
+      "styleSheet": "/sass/occ.scss",
+      "logo": "/images/logo.svg",
+      "components":{
+        "header": {
+          "searchbar": true,
+          "width": "full"
+        },
+        "hero": {
+          "title": "Comer sano, crecer sano",
+          "subtitle": "Suscríbete al blog de salud, nutrición y embarazo de Occident y no te pierdas ninguna novedad.",
+          "cta": "Suscríbete a nuestra Newsletter ✉️"
+        },
+        "logo": {
+          "image": "/images/logo.svg",
+          "alt": "Canal Salud"
+        }
+      },
+      "footer": "<p>Aquí irá un breve texto sobre nosotros con las recomendaciones de Domain Authority. Id sunt dolor deserunt nulla tempor reprehenderit eiusmod laborum pariatur aliqua amet enim.</p><p><a href=''>Contacta con Occident.</a></p><p><a href=''>← Volver a occident.com</a></p>",
+      "menu": {
+        "header": ["Salud y Bienestar", "Prevención Enfermedades", "Protección para tu Salud", "Recursos y Utilidades ▾"],
+        "footer": ["Privacy Policy", "Terms & Conditions"]
+      },
+      "languages": ["Spanish"],
+      "colophon": "© 2021 Occident. All rights reserved.",
+      "landing": {
+        "ebook": "/images/ebook.png",
+        "preTitle": "Free Ebook",
+        "title": "Descarga el Ebook sobre la temática de esta landing",
+        "subtitle": "Rellena el siguiente formulario para descargar el Ebook:"
+      },
+      "thankyou": {
+        "title": "¡Formulario enviado con éxito!",
+        "subtitle": "Te hemos enviado la información por Email, pero también puedes descargarla haciendo click aquí."
+      }
+    }
+
+
+  }
+}

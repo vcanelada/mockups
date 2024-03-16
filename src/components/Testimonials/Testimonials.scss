@@ -1,0 +1,32 @@
+.testimonials {
+  @apply py-16;
+  &__title {
+    @apply text-4xl font-bold mb-8 text-center;
+  }
+  &__item {
+    @apply p-16 bg-[var(--color-background-alt)] text-center rounded-md flex flex-col gap-4 relative;
+    // arrows
+    &:before,
+    &:after {
+      @apply absolute text-xl top-1/2 left-0 flex items-center justify-center w-4 h-4 -translate-x-full -translate-y-1/2;
+      content: '←';
+    }
+    &:after {
+      @apply top-1/2 right-0 left-auto translate-x-full;
+      content: '→';
+    }
+  }
+  &__text {
+    @apply italic;
+  }
+  &__author {
+    @apply text-sm;
+    h3 {
+      @apply font-bold;
+    
+    }
+  }
+  img {
+    @apply w-20 h-20 rounded-full m-auto;
+  }
+}

@@ -1,0 +1,25 @@
+.faqs {
+  @apply bg-[var(--color-background-alt)] py-20;
+  &__title {
+    @apply text-4xl font-bold mb-8 text-center;
+  }
+  &__items {
+    @apply flex flex-col bg-[var(--color-background)] rounded-md px-8 py-4;
+  }
+  &__item {
+    @apply border-b border-[var(--color-background-alt)] py-4;
+    &:last-child {
+      @apply border-0;
+    }
+  }
+  &__question {
+    @apply flex items-center justify-between cursor-pointer;
+    &:after {
+      @apply block w-4 h-4;
+      content: '↓';
+    }
+  }
+  &__answer {
+    @apply hidden;
+  }
+}

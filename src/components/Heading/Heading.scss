@@ -1,0 +1,17 @@
+.heading {
+  @apply text-center relative gap-2 flex flex-col;
+  &__wrapper {
+    @apply flex flex-col items-center gap-2;
+  }
+  &__title {
+    @apply text-4xl font-bold mb-2;
+  }
+  &:before {
+    @apply block text-2xl;
+    content: '|';
+  }
+  &:after {
+    @apply block text-2xl;
+    content: '↓';
+  }
+}

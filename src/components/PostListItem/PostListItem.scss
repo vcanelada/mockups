@@ -1,0 +1,22 @@
+.post-item {
+  @apply flex flex-col gap-4;
+  &__image {
+    @apply rounded-md overflow-hidden aspect-video;
+    img {
+      @apply object-cover w-full h-full transition-transform duration-300;
+      @apply hover:scale-105;
+    }
+  }
+  &__content {
+    @apply px-2;
+  }
+  &__title {
+    @apply text-2xl font-bold;
+  }
+  &__link {
+    @apply text-xs font-bold uppercase tracking-widest text-[var(--color-secondary)] hover:underline mt-4 block;
+  }
+  a {
+    @apply hover:underline decoration-[var(--color-secondary)];
+  }
+}

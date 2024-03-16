@@ -1,0 +1,19 @@
+.nav {
+  ul {
+    @apply flex items-center gap-8;
+    li {
+      a {
+        @apply flex items-center gap-2 text-sm font-bold tracking-wider;
+      }
+    }
+  }
+  &-sidebar {
+    @apply hidden fixed top-0 right-0 h-full w-96 bg-white z-50 shadow-lg px-4;
+    &--open {
+      @apply block;
+    }
+    &__title {
+      @apply flex items-center justify-between py-4 border-b border-b-gray-200;
+    }
+  }
+}

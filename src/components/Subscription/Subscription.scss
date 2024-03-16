@@ -1,0 +1,21 @@
+.subscription {
+  @apply py-20;
+  &__wrapper {
+    @apply max-w-2xl rounded-xl p-10 bg-[var(--color-background-alt)];
+  }
+  &__title {
+    @apply text-center text-4xl font-bold mb-10;
+  }
+  form {
+    @apply grid grid-cols-[1fr_min-content] auto-rows-min;
+    label {
+      @apply col-start-1 col-span-2;
+    }
+    input {
+      @apply col-start-1  col-end-2 row-start-2;
+    }
+    button {
+      @apply row-start-2 col-start-2 whitespace-nowrap;
+    }
+  }
+}

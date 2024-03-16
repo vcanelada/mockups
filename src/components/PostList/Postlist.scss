@@ -1,0 +1,14 @@
+.post-list {
+  &__wrapper {
+    @apply grid grid-cols-3 gap-x-8 gap-y-16;
+  }
+  .cta {
+    @apply bg-[var(--color-secondary)] text-[var(--color-background)] flex items-center justify-center text-2xl font-bold tracking-widest;
+    &--landscape {
+      @apply md:col-span-2;
+    }
+    &:before {
+      @apply relative content-['CTA'];
+    }
+  }
+}
