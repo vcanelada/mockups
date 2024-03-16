@@ -27,7 +27,7 @@ export const App = () => {
       </Routes>
 
       <Routes>
-        <Route path="/blog" element={ <BlogIndex /> } />
+        <Route path="/mockups/blog" element={ <BlogIndex /> } />
         <Route path="/landing-tofu" element={ <LandingTofu /> } />
         <Route path="/landing-bofu" element={ <LandingBofu /> } />
         <Route path="/thankyou" element={ <ThankYou /> } />
