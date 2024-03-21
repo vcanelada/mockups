@@ -4,8 +4,8 @@ export const BlogIndex = () => {
   return (
     <>
       <Hero />
-      {/* <PostList />
-      <Subscription /> */}
+      <PostList />
+      <Subscription />
     </>
   )
 }
