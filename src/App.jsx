@@ -22,23 +22,17 @@ const router = createHashRouter([
   { path: '/*', element: <Footer /> },
 ]
 );
-
+import './themes/occ/sass/occ.scss'
 
 export const App = () => {
   // const location = useLocation()
-  const theme = "occ";
-  if (theme) {
-    // import( themes[theme].themePath + themes[theme].styleSheet )
-    // add styles from .css file
-
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = themes[theme].themePath + themes[theme].styleSheet;
-    document.head.appendChild(link);
-
-
-  }
-  // const isEmail = window.location.pathname == '/email';
+  // const theme = "occ";
+  // if (theme) {
+  //   const link = document.createElement('link');
+  //   link.rel = 'stylesheet';
+  //   link.href = themes[theme].themePath + themes[theme].styleSheet;
+  //   document.head.appendChild(link);
+  // }
 
   return (
     <>
