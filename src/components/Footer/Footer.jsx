@@ -37,7 +37,7 @@ export const Footer = () => {
             </p>
           </div>
           <div className="colophon__right">
-            <Navigation location="footer" />
+            <Navigation view="footer" />
           </div>
         </div>
       </div>
