@@ -43,7 +43,7 @@
     
     "occ" : {
       "version": "1.0.0",
-      "themePath": "/src/themes/occ",
+      "themePath": "./src/themes/occ",
       "styleSheet": "/sass/occ.scss",
       "logo": "/images/logo.svg",
       "components":{
