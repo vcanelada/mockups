@@ -1,5 +1,6 @@
 import { Pagination } from "../Pagination/Pagination"
 import { PostListItem } from "../PostListItem/PostListItem"
+
 import './Postlist.scss'
 
 export const PostList = () => {
