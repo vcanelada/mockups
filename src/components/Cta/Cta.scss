@@ -1,0 +1,9 @@
+.cta {
+  @apply bg-occGrayBg;
+  &__wrapper {
+    @apply px-12 py-8 flex flex-col items-center justify-center text-center gap-2;
+  }
+  img {
+    @apply rounded-md shadow-lg h-80;
+  }
+}

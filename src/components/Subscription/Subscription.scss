@@ -1,7 +1,7 @@
 .subscription {
   @apply py-20;
   &__wrapper {
-    @apply max-w-2xl rounded-xl p-10 bg-[var(--color-background-alt)];
+    @apply max-w-2xl rounded-md p-10 bg-occGrayBg;
   }
   &__title {
     @apply text-center text-4xl font-bold mb-10;

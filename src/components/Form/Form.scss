@@ -19,6 +19,6 @@
     }
   }
   button, [type='button'], [type='reset'], [type='submit'] {
-    @apply col-start-2 whitespace-nowrap bg-[var(--color-primary)] text-white p-4 rounded-md cursor-pointer;
+    @apply col-start-2 whitespace-nowrap bg-occRed text-white p-4 rounded-md cursor-pointer;
   }
 }

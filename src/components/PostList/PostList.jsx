@@ -1,3 +1,4 @@
+import { Cta } from "../Cta/cta"
 import { Pagination } from "../Pagination/Pagination"
 import { PostListItem } from "../PostListItem/PostListItem"
 
@@ -8,9 +9,9 @@ export const PostList = () => {
     <section className="post-list">
       <div className="post-list__wrapper content-wrapper">
         {
-          [...Array(14)].map((_, index) => (
-              index === 2 || index === 6
-              ? <div className={index === 6 ? 'cta cta--landscape' : 'cta'} key={index}></div>
+          [...Array(15)].map((_, index) => (
+              index === 2 || index === 6 || index === 13
+              ? <Cta key={index} type={index === 6 ? 'landscape' : 'single'} />
               : <PostListItem key={index} />
           ))
         }

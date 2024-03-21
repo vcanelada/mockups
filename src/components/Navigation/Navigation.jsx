@@ -5,7 +5,6 @@ import {themes} from '../../themes/themes.json';
 
 import { FaXmark } from "react-icons/fa6";
 import { Related } from '..';
-import { useLocation } from 'react-router-dom';
 
 const handleClick = (e) => {
   e.preventDefault();
@@ -14,9 +13,7 @@ const handleClick = (e) => {
 }
 
 export const Navigation = ( { view } ) => {
-  const location = useLocation()
-  const theme = new URLSearchParams(location.search).get('theme');
-
+  const theme = "occ";
   const items = ( themes[theme].menu[view] )
   ? themes[theme].menu
   : {

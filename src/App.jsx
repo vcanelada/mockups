@@ -8,7 +8,7 @@ import { Email } from './components/templates/Email'
 
 const router = createHashRouter([
   { path: '/*', element: <Header /> },
-  { path: '/blog', element: <><Header /><BlogIndex /><Footer /></> },
+  { path: '/blog', element: <BlogIndex /> },
   { path: '/landing-tofu', element: <LandingTofu /> },
   { path: '/landing-bofu', element: <LandingBofu /> },
   { path: '/thankyou', element: <Email /> },

@@ -1,0 +1,50 @@
+{"columns":
+  [
+    {
+      "title": "Seguros",
+      "links":[
+        "Seguros de coche",
+        "Seguros de hogar",
+        "Seguros de salud",
+        "Seguros de movilidad personal",
+        "Seguro de mascotas",
+        "Renting a particulares",
+        "Seguros de vida",
+        "Seguro de responsabilidad civil",
+        "Seguro de viaje",
+        "Seguros de ahorro"
+      ]
+    },
+    {
+      "title": "Contacto",
+      "links": [
+        "Asistencia 24h",
+        "Contactar",
+        "Oficinas"
+      ]
+    },
+    {
+      "title": "Servicios",
+      "links": [
+        "Cuadro médico",
+        "Cuadro dental",
+        "Cuadro Bienestar y salud",
+        "Encuentra un taller",
+        "Declara un siniestro",
+        "Ver todos los servicios"
+      ]
+    },
+    {
+      "title": "Sobre Occident",
+      "links": [
+        "Por qué nosotros",
+        "Fundación Occident",
+        "GCO",
+        "Revista Exclusiva",
+        "Trabaja con nosotros",
+        "Quiero ser agente",
+        "Ofertas para profesionales"
+      ]
+    }
+  ]
+}

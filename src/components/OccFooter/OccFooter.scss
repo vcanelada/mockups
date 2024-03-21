@@ -1,0 +1,9 @@
+.occ-footer {
+  @apply bg-occGrayBg py-20;
+  &__social {
+    @apply border-b-gray-300 mb-10 pb-10 border-b;
+  }
+  &__cols {
+    @apply grid grid-cols-4 gap-4;
+  }
+}

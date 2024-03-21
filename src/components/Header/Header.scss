@@ -1,5 +1,5 @@
 .header {
-  @apply bg-[var(--color-background-alt)] py-4;
+  @apply bg-white py-4;
   &__wrapper {
     @apply flex justify-between gap-8 items-center;
   }
@@ -7,7 +7,7 @@
     @apply flex items-center gap-4 cursor-pointer;
   }
   &__toggle {
-    @apply text-[var(--color-primary)] flex items-center text-xl;
+    @apply text-occRed flex items-center text-xl;
     @apply md:hidden;
   }
   &__column {
