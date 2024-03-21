@@ -1,10 +1,11 @@
 import './Navigation.scss';
 
 import {themes} from '../../themes/themes.json';
-const theme = new URLSearchParams(window.location.search).get('theme');
+// const theme = new URLSearchParams(window.location.search).get('theme');
 
 import { FaXmark } from "react-icons/fa6";
 import { Related } from '..';
+import { useLocation } from 'react-router-dom';
 
 const handleClick = (e) => {
   e.preventDefault();
@@ -12,8 +13,11 @@ const handleClick = (e) => {
   navSidebar.classList.toggle('nav-sidebar--open');
 }
 
-export const Navigation = ( { location } ) => {
-  const items = ( themes[theme].menu[location] )
+export const Navigation = ( { view } ) => {
+  const location = useLocation()
+  const theme = new URLSearchParams(location.search).get('theme');
+
+  const items = ( themes[theme].menu[view] )
   ? themes[theme].menu
   : {
     header: ['Home', 'Categories', 'Resources Center', 'Contact'],
@@ -24,10 +28,10 @@ export const Navigation = ( { location } ) => {
     <div className="nav">
       <ul>
         {
-          items[location].map((item, index) => (
+          items[view].map((item, index) => (
             <li key={index}>
               {
-              index === items[location].length - 1 ? <a href="#" onClick={handleClick}>{item}</a> : <a href="#">{item}</a>
+              index === items[view].length - 1 ? <a href="#" onClick={handleClick}>{item}</a> : <a href="#">{item}</a>
               }
             </li>
           ))

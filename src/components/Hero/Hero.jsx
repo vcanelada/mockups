@@ -1,10 +1,16 @@
 import './Hero.scss'
 
-const theme = new URLSearchParams(window.location.search).get('theme');
+// const theme = new URLSearchParams(window.location.search).get('theme');
+
 import { themes } from '../../themes/themes.json';
 import { Button } from '../Button/Button';
+import { useLocation } from 'react-router-dom';
+
+
 
 export const Hero = () => {
+  const location = useLocation()
+  const theme = new URLSearchParams(location.search).get('theme');
   return (
     <section className="hero">
       <div className="hero__wrapper content-wrapper">
