@@ -1,0 +1,72 @@
+.post {
+  @apply py-8;
+  &__wrapper {
+    @apply grid grid-cols-2 gap-8;
+    grid-template-columns: 3fr 1fr;
+  }
+  &__header {
+    @apply col-start-1 col-end-2;
+  }
+  &__main {
+    @apply col-start-1 col-end-2;
+  }
+  &__sidebar {
+    @apply col-start-2 col-end-3;
+  }
+}
+
+.post-header {
+  a {
+    @apply text-occRed;
+  }
+  &__wrapper {
+    @apply grid grid-cols-1 gap-8;
+    // grid-template-columns: 3fr 1fr;
+  }
+  &__info {
+    @apply flex items-start flex-col gap-4 col-start-1 col-end-2;
+  }
+  &__categories {
+    @apply flex items-start gap-4;
+  }
+  &__title {
+    @apply text-5xl;
+  }
+  &__meta {
+    @apply flex items-center gap-4  col-start-1 col-end-2;
+  }
+  &__image {
+    @apply aspect-video col-start-1 col-end-2;
+    img {
+      @apply w-full h-full object-cover object-center rounded-md;
+    }
+  }
+}
+
+
+.content-index {
+  @apply bg-occGrayBg p-4 rounded-md sticky top-20;
+  &__wrapper {
+  }
+}
+
+.post-content {
+  p {
+    @apply mb-8 text-lg;
+    &:first-child {
+      &::first-letter {
+        @apply text-5xl font-bold;
+      }
+    }
+  }
+  img {
+    @apply mb-8 rounded-md;
+  }
+}
+
+.related-posts {
+  @apply py-16 bg-occGrayBg;
+  &__title {
+    @apply text-2xl text-center;
+  }
+}
