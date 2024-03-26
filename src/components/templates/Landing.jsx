@@ -1,9 +1,11 @@
-import { LandingHero, MediaText, Featured, Testimonials, Faqs } from ".."
+import { LandingHero, MediaText, Featured, Testimonials, Faqs, Header, Footer } from ".."
 
 export const LandingTofu = () => {
   return (
     <>
+      <Header view="landing" />
       <LandingHero type="tofu" />
+      <Footer />
     </>
   )
 }

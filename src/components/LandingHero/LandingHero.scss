@@ -1,5 +1,5 @@
 .landing-hero {
-  @apply py-20;
+  @apply py-10;
   &__wrapper {
     @apply grid grid-cols-2 gap-16;
   }
@@ -35,5 +35,8 @@
         content: '→';
       }
     }
+  }
+  .sharing {
+    @apply border-t border-t-gray-200 mt-8 pt-8;
   }
 }

@@ -1,4 +1,4 @@
-import {Form} from '..'
+import {Form, Sharing} from '..'
 import './LandingHero.scss';
 
 import {themes} from '../../themes/themes.json';
@@ -12,7 +12,7 @@ const formFields = [
   { name: 'options', label: 'Options', type: 'checkbox', options: ['Spain', 'Chile', 'Brazil', 'France'] }
 ];
 
-export const LandingHero = ( {type} ) => {
+export const LandingHero = ( {type, social = null} ) => {
   return (
     <>
       <div className="landing-hero">
@@ -39,6 +39,9 @@ export const LandingHero = ( {type} ) => {
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                   </ul>
                 )
+              }
+              {
+                social !== 'hide' && (<Sharing />)
               }
             </div>
           </div>

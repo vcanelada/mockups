@@ -19,4 +19,10 @@
   img {
     @apply max-h-40 rounded-md shadow-lg m-auto mb-8;
   }
+  .sharing {
+    @apply text-center;
+    &__items {
+      @apply justify-center;
+    }
+  }
 }
